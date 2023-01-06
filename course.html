@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+      <title>University Website Design - Easy Tutotirals</title>
+      <link rel="stylesheet" href="style.css" />
+      <!--Google Font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <!--ICONS-->
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+   </head>
+   <body>
+      <section class="sub-header">
+         <nav>
+            <a href="index.html"> <img src="images/logo.png" /> </a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">COURSE</a></li>
+                  <li><a href="">BLOG</a></li>
+                  <li><a href="">CONTACT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1>Our courses</h1>
+      </section>
+      <section class="course">
+         <h1>Courses We Offer</h1>
+         <p>Here are some of our most popular course that you can choose from.</p>
+         <div class="row">
+            <div class="course-col">
+               <h3>Intermediate</h3>
+               <p>This course is meant for people with intermediate skills.</p>
+            </div>
+            <div class="course-col">
+               <h3>Degree</h3>
+               <p>This course is meant for people who want to earn a degree.</p>
+            </div>
+            <div class="course-col">
+               <h3>Post Graduation</h3>
+               <p>
+                  This course is meant for people who have graduated from our previous
+                  course..
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="facilities">
+         <h1>Our Facilities</h1>
+         <p>Here you can see all of our facilities you'll have access to.</p>
+         <div class="row">
+            <div class="facilities-col">
+               <img src="images/library.png" />
+               <h3>World Class Library</h3>
+               <p>
+                  Our library is one of the top 10 libraries in the world. So you know
+                  you'll always have access to the best boks
+               </p>
+            </div>
+            <div class="facilities-col">
+               <img src="images/basketball.png" />
+               <h3>Largest Playground</h3>
+               <p>We have one of the best known gymnasiums in the state.</p>
+            </div>
+            <div class="facilities-col">
+               <img src="images/cafeteria.png" />
+               <h3>Tasty and Healthy Food</h3>
+               <p>
+                  We always try our best when it comes to food becaus we value
+                  nutrition.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="footer">
+         <h4>About Us</h4>
+         <p>This here is just another text where we will tell you a little more about us. 
+            The purpose of this is so that </br>you can make an easier decision abpout 
+            weather or not you wish to study here
+         </p>
+         <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+         </div>
+         <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials.</p>
+      </section>
+      <!-- JavaScript for Toggle Menu -->
+      <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu() {
+           navLinks.style.right = "0";
+         }
+         function hideMenu() {
+           navLinks.style.right = "-200px";
+         }
+      </script>
+   </body>
+</html>
