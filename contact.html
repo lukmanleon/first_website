@@ -22,11 +22,11 @@
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -66,11 +66,11 @@
             </div>
             
             <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="email" placeholder="Enter Email address requierd">
-                    <input type="email" placeholder="Enter your subject">
-                    <textarea rows="8" placeholder="Enter your  message text" required></textarea>
+                <form action="form-handler.php" method="post">
+                    <input type="text"  name = "name" placeholder="Enter Your Name">
+                    <input type="email" name = "email" placeholder="Enter Email address requierd">
+                    <input type="text" name = "subject" placeholder="Enter your subject">
+                    <textarea rows="8"  name = "message" placeholder="Enter your  message text" required></textarea>
                     <button type="submit" class="hero-btn red-btn">Send message</button>
                 </form>
             </div>
